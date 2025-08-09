@@ -1,5 +1,5 @@
-# ❌⌨️💬 No Word Chat
-Communicate past language barriers with ease! This is coded for Shipwrecked's Challenge 2, which makes us create an app that doesn't use text or numbers.
+# ❌✍️💬 No Word Chat
+Communicate past language barriers with ease! This is coded for Shipwrecked's Challenge 2, which makes us create an app that doesn't use text or numbers. Even though it is named No Word Chat, it actually doesn't allow any text or numbers to be entered, only emojis.
 
 <div align="center">
   <a href="https://shipwrecked.hackclub.com/?t=ghrm" target="_blank">
