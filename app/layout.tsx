@@ -6,7 +6,7 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 config.autoAddCss = false;
 
 export const metadata: Metadata = {
-  title: "❌⌨️💬",
+  title: "❌✍️💬",
 };
 
 export default function RootLayout({

@@ -2,16 +2,23 @@
 import { faComment } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ChangeEvent, FormEvent, useState } from "react";
+import { socket } from "@/socket";
 
 export default function ChatForm() {
   const [content, setContent] = useState<string>("");
   const [color, setColor] = useState<string>("#000000");
+  const [soundPlaying, setSoundPlaying] = useState<boolean>(false);
   function handleSubmit(e: FormEvent) {
     e.preventDefault();
+    socket.emit("chat", content, "💬");
+    
   }
   function handleContentChange(e: ChangeEvent<HTMLInputElement>) {
-    const nonEmojiRegex = /[a-zA-Z0-9!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~` ]/;
-    if (nonEmojiRegex.test(e.target.value)) return;
+    if (nonEmojiRegex.test(e.target.value)) {
+      const audio = new Audio("/no.mp3#t=0.6");
+      audio.play();
+      return;
+    }
     setContent(e.target.value);
   }
   return (
@@ -24,3 +31,4 @@ export default function ChatForm() {
     </form>
   );
 }
+export const nonEmojiRegex = /[a-zA-Z0-9!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~` ]/;

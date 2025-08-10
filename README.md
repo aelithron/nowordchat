@@ -10,4 +10,4 @@ Communicate past language barriers with ease! This is coded for Shipwrecked's Ch
 </div>
 
 ## Usage
-Go to [noword.nova.hackclub.app](https://noword.nova.hackclub.app) and start messaging! You will get a random profile picture, which should persist. The app doesn't require log-in, as it is meant to be simple to use.
+Go to [noword.nova.hackclub.app](https://noword.nova.hackclub.app) and start messaging! You will get a random profile emoji, which should persist. The app doesn't require log-in, as it is meant to be simple to use.
